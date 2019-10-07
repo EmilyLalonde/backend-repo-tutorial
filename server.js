@@ -1,6 +1,7 @@
 const express = require('express');
 const app = express();
-const cors = require('cors')
+const cors = require('cors');
+const environment = process.env.NODE_ENV || 'development';
 
 app.set('port', process.env.PORT || 3001);
 app.locals.title = 'Seasons';
